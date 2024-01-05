@@ -10,40 +10,46 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap"
       rel="stylesheet"
     />
-   <link rel="stylesheet" href="../explorerSemLimites/style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="bloco1">
       <div class="titulos">
-        <h2>Explore sem limites</h2>
-        <h1>Porque o aprendizado é contínuo</h1>
+        <img src="./img/astronauta image 11969.png" alt="" class="astronauta" />
+      </div><div>
+        <h1>Explore sem limites</h1>
+        <h2>Porque o aprendizado é contínuo</h2>
+        <a href="#cards"><img src="./img/Group 24.png" id="botaoBloco1"/></a>
       </div>
-      <button></button>
-      <img src="" alt="" />
+      </div>
     </div>
-    <div class="bloco2">
-      <div class="cards">
-        <div class="card1">
-          <img src="" alt="" />
-          <h2>Não pare nunca</h2>
+    <div class="bloco2" id="cards">
+      <div class="card">
+        <img src="./img/image 11971.png" alt="" />
+        <div class="text-card">
+          <h1>Não pare nunca</h1>
           <p>
             Se você deseja ter sucesso nos estudos, é fundamental que você adote
             uma mentalidade de "não pare nunca". Estudar de forma consistente e
             contínua é a chave para o progresso e a conquista de seus objetivos.
           </p>
         </div>
-        <div class="card2">
-          <img src="" alt="" />
-          <h2>Só volta</h2>
+      </div>
+      <div class="card">
+        <img src="./img/image 11972.png" alt="" />
+        <div class="text-card">
+          <h1>Só volta</h1>
           <p>
             Se você parou ou perdeu o ritmo em alguma atividade ou projeto,
             saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias
             podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.
           </p>
         </div>
-        <div class="card3">
-          <img src="" alt="" />
-          <h2>Siga seu ritmo</h2>
+      </div>
+      <div class="card">
+        <img src="./img/image 11973.png" alt="" />
+        <div class="text-card">
+          <h1>Siga seu ritmo</h1>
           <p>
             Avançar pouco a pouco mantém progresso constante em objetivos,
             evitando parar ou desistir. Mesmo pequenos passos nos aproximam do
@@ -54,18 +60,37 @@
       </div>
     </div>
     <div class="bloco3">
-      <h2>Entre em contato</h2>
-      <form>
-        <input type="text" placeholder="Seu nome" />
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Digite sua mensagem aqui..." />
-        <button>Enviar mensagem</button>
-      </form>
+      <div class="formulario">
+        <form>
+          <h1>Entre em contato</h1>
+          <fieldset>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                placeholder="Seu nome"
+                id="name"
+              />
+            </div>
+            <div class="input-wrapper">
+              <input type="email" placeholder="Email" id="email" />
+            </div>
+            <div class="input-wrapper">
+              <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+      <img src="./img/image 11976.png" />
     </div>
     <footer>
       <p>c 2023 - Rocketseat Explorer</p>
     </footer>
 
     <script src="./main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/106a50fc94.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

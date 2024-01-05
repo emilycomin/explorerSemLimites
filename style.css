@@ -1,17 +1,168 @@
-/* * {
-    font-family: "Mulish", sans-serif;
-    padding: 0%;
-    margin: 0%;
-    font-style: none;
-    list-style: none;
-    text-decoration: none;
-} */
-/* :root {
-    --title-color: #b52184;
-    --text-color: #312d64;
-    --gradiente-colors: #343193;
-} */
+* {
+  font-family: "Mulish", sans-serif;
+  padding: 0%;
+  margin: 0%;
+  font-style: none;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --title-color: #b52184;
+  --text-color: #312d64;
+  --gradiente-colors: #343193;
+}
 
 body {
-  background-color: #302c63;
+  background-color: #f9f4fb;
+  font-family: Mulish, sans-serif;
+  text-align: center;
+}
+.astronauta {
+  width: 364px;
+  height: 370px;
+}
+
+h1 {
+  color: var(--title-color);
+  font-size: 2rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 5px 0 35px;
+}
+.bloco2 {
+  display: flex;
+  flex-direction: column;
+  gap: 49.662px;
+  padding: 52.972px 91.874px;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+}
+
+.card {
+  display: flex;
+  padding: 26.486px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 33.108px;
+  align-self: stretch;
+  border-radius: 19.865px;
+  background: #fff;
+  box-shadow: 0px 3.311px 13.243px 0px rgba(0, 0, 0, 0.25);
+}
+.bloco3 > img {
+  display: none;
+}
+.bloco3 {
+  padding: 7.8rem 3.9rem 6.5rem;
+}
+fieldset {
+  border: none;
+}
+input,
+textarea {
+  border-radius: 1rem;
+  padding: 0.75rem 1rem 1rem 1rem;
+  color: var(--text-color);
+  width: 100%;
+  border: 1.5px solid #312d64;
+  margin: 24px auto;
+}
+textarea {
+  height: 98px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-color);
+}
+
+#name {
+  background: url(./images/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email {
+  background: url(./images/mail.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+button {
+  display: flex;
+  height: 45px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  color: #fff;
+  margin: 0 0 65px 10px;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+}
+
+footer {
+  display: flex;
+  height: 78px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #fff;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+}
+@media (max-width: 1440px) {
+  body {
+    background-color: #F9F4FB;
+  }
+  .bloco1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #botaoBloco1{
+    width: 58.587px;
+  height: 105px;
+  float: left;
+  }
+  .bloco1 h1{
+    margin-top:30px ;
+  }
+  .bloco2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4.5rem;
+    padding: 4rem 6.9rem;
+    background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+  }
+  .text-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  .card {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    border-radius: 1.23rem;
+    background: #fff;
+    box-shadow: 0px 3.311px 13.243px 0px rgba(0, 0, 0, 0.25);
+  }
+  .card p {
+    width: 321px;
+    font-size: 1.23rem;
+    text-align: left;
+  }
+
+  /* bloco 3 formulario */
+  .bloco3{
+    display: flex;
+    flex-direction: row;
+    gap: 5.75rem;
+    padding: 0;
+  }
+  .bloco3 img {
+   display: inline;
+  }
 }
